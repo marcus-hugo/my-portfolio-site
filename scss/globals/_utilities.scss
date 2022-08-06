@@ -1,0 +1,44 @@
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
+
+/* ************* */
+/*    Margins   */
+/* ************* */
+.m-1rem {margin: 1rem;}
+
+/* ************* */
+/*    Paddings   */
+/* ************* */
+.p01 {padding: 0 1rem;}
+.p10 {padding: 1rem 0;}
+
+/* ************* */
+/* Border-radius */
+/* ************* */
+.br-3 {border-radius: 3px;}
+.br-5 {border-radius: 5px;}
+
+/* ************* */
+/*    Flexbox    */     
+/* ************* */
+.f {display: flex;}
+.w {flex-wrap: wrap;}
+.g1 {gap: 1rem;}
+.fd-c {flex-direction: column;}
+.jc-c {justify-content: center;}
+.jc-sb {justify-content: space-between;}
+.ai-c {align-items: center;}
+
+/* 
+    ex. w/flex utility classes:
+    <div class=" f jc-c g1"></div>
+*/

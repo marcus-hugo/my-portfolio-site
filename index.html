@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles.css">
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>My Portfolio Site</title>
+</head>
+
+<body>
+    <!-- skip link -->
+    <a href="#main" class="skip-link sr-only">Skip to main content</a>
+
+    <!-- Header / Navagation -->
+    <header class="header f ai-c jc-sb">
+        <div class="header__logo m-1rem"><a href="index.html">MPH</a></div>
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="nav-ul__li">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="nav-ul__li">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="nav-ul__li">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="button m-1rem button-toggle--theme-light">Light</button>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+
+        <!-- Hero Section -->
+        <section class="hero-section f jc-c" id="hero">
+            <div class="wrapper f fd-c jc-c ai-c">
+                <div class="hero__img-wrapper">
+                    <img class="hero__img" src="images/selfie-no-bg.png" alt="Marcus"></img>
+                </div>
+                <h1 class="hero__title">Hi, I'm Marcus!</h1>
+                <p class="hero__subtitle">Frontend <span class="gradient dev">Developer.</span></p>
+                <p class="hero__text">I enjoy working from a design and bringing it to life on the web!
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section f fd-c jc-c ai-c">
+            <h2 class="site__title">My Skills</h2>
+            <p class="skills-section__text">
+               
+            </p>
+            
+            <ul class="skills-section-ul f w">
+                <li class="skills-section-ul__li">HTML</li>
+                <li class="skills-section-ul__li">CSS</li>
+                <li class="skills-section-ul__li">JavaScript</li>
+                <li class="skills-section-ul__li">Sass</li>
+                <li class="skills-section-ul__li">React</li>
+                <li class="skills-section-ul__li">Git</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="wrapper">
+                <h2 class="site__title">My Projects</h2>
+            </div>
+            <div class="f w jc-c g1">
+                <!-- Project -->
+                <div class="project f fd-c ai-c">
+                    <div class="project__img-wrapper">
+                        <img class="screenshot" src="images/crative-single-page-site.png" alt="creative single page site">
+                    </div>
+                    <h4 class="project__title">Creative Single Page Site</h4>
+                    <p class="project__text">
+                        Three section site with a 
+                        drop-down menu, 3 images carousel, 
+                        built with a webpack workflow.
+                    </p>
+                    <div class="f g1">
+                        <a href="https://marcus-hugo.github.io/creative-single-page-site/"  target="_blank" rel="noopener noreferrer">Live</a>
+                        <a href="https://github.com/marcus-hugo/creative-single-page-site" target="_blank" rel="noopener noreferrer">Github</a>
+                    </div>
+                </div>
+
+                <!-- Project -->
+                <div class="project f fd-c ai-c">
+                    <div class="project__img-wrapper">
+                        <img class="screenshot" src="images/social-media-dashboard.png" alt="social media dashboard">
+                    </div>
+                    <h4 class="project__title">Social Media Dashboard</h4>
+                    <p class="project__text">
+                        Dashboard with OS prefers-color-scheme 
+                        and checkbox for manual switching.
+                    </p>
+                    <div class="f g1">
+                        <a href="https://marcus-hugo.github.io/social-media-dashboard-with-theme-switcher-master/" target="_blank" rel="noopener noreferrer">Live</a>
+                        <a href="https://github.com/marcus-hugo/social-media-dashboard-with-theme-switcher-master" target="_blank" rel="noopener noreferrer">Github</a>
+                    </div>
+                </div>
+
+                 <!-- Project -->
+                 <div class="project f fd-c ai-c">
+                    <div class="project__img-wrapper">
+                        <img class="screenshot" src="images/invoice-creator.png" alt="social media dashboard">
+                    </div>
+                    <h4 class="project__title">Invoice Creator</h4>
+                    <p class="project__text">Invoice app to add and remove itmes, and send(reset) the form.</p>
+
+                    <div class="f g1">
+                        <a href="https://marcus-hugo.github.io/invoice-creater/" target="_blank" rel="noopener noreferrer">Live</a>
+                        <a href="https://github.com/marcus-hugo/invoice-creater" target="_blank" rel="noopener noreferrer">Github</a>
+                    </div>   
+                </div>
+              
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="wrapper">
+                <h2 class="site__title">Contact</h2>
+                <p>Let me know if you are interested in working together on a project!</p>
+            </div>
+            <!-- Social links -->
+            <div class="social-links-wrapper f jc-c g1">
+                <a class="social-icons__link" href="https://www.linkedin.com/in/marcus-hugo-27823b32" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin fa-2x">LinkedIn</i>
+                    <span class="sr-only">go to my linkedin profile</span>
+                </a>
+
+                <a class="social-icons__link" href="https://github.com/marcus-hugo" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github fa-2x">Github</i>
+                    <span class="sr-only">go to my github profile</span>
+                </a>
+
+                <a class="social-icons__link" href="mailto:phantomboss300@yahoo.com">
+                    <i class="fas fa-envelope-square fa-2x">Email</i>
+                    <span class="sr-only">email me with email client</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="f jc-c ai-c g1">
+        <small>© 2022 Marcus Hugo</small>
+        <small>Made with &#x1F497; in Collierville, TN</small>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

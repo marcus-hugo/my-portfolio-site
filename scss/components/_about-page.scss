@@ -1,0 +1,16 @@
+.about-text-wrapper {
+    p {
+        @media(min-width: 980px) {
+            max-width: 70%;
+            align-self: center;
+         }
+     
+         @media(min-width: 1400px) {
+            max-width: 50%;
+         }
+     
+         @media(min-width: 2000px) {
+             max-width: 40%;
+         }
+    }
+}

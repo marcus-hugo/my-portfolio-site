@@ -1,0 +1,30 @@
+
+.project {
+    max-width: 400px;
+    border: 1px solid;
+    padding: 1rem .7rem;
+    margin: 0 .7rem;
+    border-radius: 7px;
+    justify-content: space-between;
+}
+
+.project__img-wrapper {
+    border-radius: 5px;
+
+    img {
+        max-height: 200px;
+    }
+}
+
+.project__title {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.project__text {
+    padding: 1rem 0;
+    color: #cacaca;
+}
+
+a:hover {
+    text-decoration: underline;
+}

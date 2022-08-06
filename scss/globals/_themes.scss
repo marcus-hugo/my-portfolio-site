@@ -1,0 +1,43 @@
+body.light {
+    background: #f5f5f5;
+    color: #212121;
+}
+
+.button.light {
+    background: initial;
+    color: initial;
+
+    &:hover {
+        background: #212121;
+        color: #f5f5f5;
+    }
+}
+
+p.light { color: #363636; }
+
+.gradient {
+    background: -webkit-linear-gradient(45deg, #f4511e, #ffc107 );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.site__title {
+    font-size: 2rem;
+    position: relative;
+}
+
+.site__title::before, 
+.site__title::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 80px;
+    background: #f4511e;
+    z-index: -1;
+    top: 40%;
+    border-radius: 2px;
+}
+
+.site__title::before { transform: translateX(-89px); }
+.site__title::after { transform: translateX(10px); }

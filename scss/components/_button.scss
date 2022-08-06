@@ -1,0 +1,13 @@
+.button {
+    padding: .3rem .5rem;
+    border-radius: 3px;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    border: 1px solid;
+    cursor: pointer;
+
+    &:hover {
+        background: var(--clr-light);
+        color: var(--clr-dark);
+    }
+}
