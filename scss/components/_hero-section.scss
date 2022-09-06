@@ -6,6 +6,8 @@
     padding: 1rem;
     color: #f4511e;
     margin-top: 2rem;
+    font-size: 4rem;
+    font-weight: 400;
 }
 
 .hero__subtitle {
@@ -18,8 +20,8 @@
 }
 
 .hero__img {
-    border: 2px dashed;
     border-radius: 50%;
+    background: linear-gradient(180deg, #f4511e, transparent);
 }
 
 .hero__img-wrapper {

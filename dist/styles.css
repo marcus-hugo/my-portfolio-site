@@ -130,7 +130,6 @@ p.light {
   position: absolute;
   height: 2px;
   width: 80px;
-  background: #f4511e;
   z-index: -1;
   top: 40%;
   border-radius: 2px;
@@ -138,10 +137,12 @@ p.light {
 
 .site__title::before {
   transform: translateX(-89px);
+  background: linear-gradient(-90deg, #f4511e, transparent);
 }
 
 .site__title::after {
   transform: translateX(10px);
+  background: linear-gradient(90deg, #f4511e, transparent);
 }
 
 .sr-only {
@@ -266,6 +267,8 @@ p.light {
   padding: 1rem;
   color: #f4511e;
   margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: 400;
 }
 
 .hero__subtitle {
@@ -278,8 +281,8 @@ p.light {
 }
 
 .hero__img {
-  border: 2px dashed;
   border-radius: 50%;
+  background: linear-gradient(180deg, #f4511e, transparent);
 }
 
 .hero__img-wrapper {

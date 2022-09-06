@@ -33,11 +33,17 @@ p.light { color: #363636; }
     position: absolute;
     height: 2px;
     width: 80px;
-    background: #f4511e;
     z-index: -1;
     top: 40%;
     border-radius: 2px;
 }
 
-.site__title::before { transform: translateX(-89px); }
-.site__title::after { transform: translateX(10px); }
+.site__title::before { 
+    transform: translateX(-89px);
+    background: linear-gradient(-90deg, #f4511e, transparent);
+}
+
+.site__title::after { 
+    transform: translateX(10px);
+    background: linear-gradient(90deg, #f4511e, transparent);
+}
