@@ -16,7 +16,7 @@ body.light {
 p.light { color: #363636; }
 
 .gradient {
-    background: -webkit-linear-gradient(45deg, #f4511e, #ffc107 );
+    background: -webkit-linear-gradient(65deg,rebeccapurple, #7f6599, lightblue, #7f6599, rebeccapurple);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -40,10 +40,10 @@ p.light { color: #363636; }
 
 .site__title::before { 
     transform: translateX(-89px);
-    background: linear-gradient(-90deg, #f4511e, transparent);
+    background: linear-gradient(-90deg, #7f6599, transparent);
 }
 
 .site__title::after { 
     transform: translateX(10px);
-    background: linear-gradient(90deg, #f4511e, transparent);
+    background: linear-gradient(90deg, #7f6599, transparent);
 }

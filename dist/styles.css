@@ -43,7 +43,7 @@ img {
 
 body {
   background: #212121;
-  color: #f5f5f5;
+  color: #d2d2d2;
   font-family: "Roboto", "sans-serif";
 }
 
@@ -113,7 +113,7 @@ p.light {
 }
 
 .gradient {
-  background: -webkit-linear-gradient(45deg, #f4511e, #ffc107);
+  background: -webkit-linear-gradient(65deg, rebeccapurple, #7f6599, lightblue, #7f6599, rebeccapurple);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -137,12 +137,12 @@ p.light {
 
 .site__title::before {
   transform: translateX(-89px);
-  background: linear-gradient(-90deg, #f4511e, transparent);
+  background: linear-gradient(-90deg, #7f6599, transparent);
 }
 
 .site__title::after {
   transform: translateX(10px);
-  background: linear-gradient(90deg, #f4511e, transparent);
+  background: linear-gradient(90deg, #7f6599, transparent);
 }
 
 .sr-only {
@@ -265,7 +265,7 @@ p.light {
 
 .hero__title {
   padding: 1rem;
-  color: #f4511e;
+  color: #7f6599;
   margin-top: 2rem;
   font-size: 4rem;
   font-weight: 400;
@@ -273,7 +273,6 @@ p.light {
 
 .hero__subtitle {
   font-size: 1.75rem;
-  color: #f4511e;
 }
 
 .hero__text {
@@ -282,7 +281,7 @@ p.light {
 
 .hero__img {
   border-radius: 50%;
-  background: linear-gradient(180deg, #f4511e, transparent);
+  background: linear-gradient(45deg, #7f6599, transparent);
 }
 
 .hero__img-wrapper {
