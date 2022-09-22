@@ -6,6 +6,10 @@
     box-shadow: 0px 0px 5px -1px;
     border-radius: 5px;
     padding: .2rem;
+
+    a:hover {
+        text-decoration: none;
+    }
 }
 
 .nav-ul {
@@ -17,8 +21,4 @@
 
 .nav-ul__li {
     list-style: none;
-}
-
-.nav-ul__li:hover {
-    text-decoration: underline;
 }

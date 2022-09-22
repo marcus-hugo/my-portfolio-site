@@ -85,8 +85,15 @@ a, .skip-link {
 
 /* focus styles */
 a:focus, .skip-link:focus {
-  outline: 2px dashed #ffab91;
+  outline: 2px dashed lightblue;
   outline-offset: 5px;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  color: #7f6599;
 }
 
 i {
@@ -95,7 +102,7 @@ i {
 
 body.light {
   background: #f5f5f5;
-  color: #212121;
+  color: #505050;
 }
 
 .button.light {
@@ -226,6 +233,7 @@ p.light {
   background: var(--clr-dark);
   color: var(--clr-light);
   box-shadow: 0px 0px 5px -1px;
+  border: none;
   cursor: pointer;
 }
 .button:hover {
@@ -242,6 +250,9 @@ p.light {
   border-radius: 5px;
   padding: 0.2rem;
 }
+.header__logo a:hover {
+  text-decoration: none;
+}
 
 .nav-ul {
   display: flex;
@@ -252,10 +263,6 @@ p.light {
 
 .nav-ul__li {
   list-style: none;
-}
-
-.nav-ul__li:hover {
-  text-decoration: underline;
 }
 
 .hero-section {
@@ -316,15 +323,8 @@ p.light {
   color: #cacaca;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 .social-links-wrapper {
   margin: 2rem 0 0 0;
-}
-.social-links-wrapper a:hover {
-  text-decoration: underline;
 }
 
 footer {

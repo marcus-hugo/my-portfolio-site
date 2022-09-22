@@ -58,8 +58,15 @@ a, .skip-link {
 
 /* focus styles */
 a:focus, .skip-link:focus {
-    outline: 2px dashed #ffab91;
+    outline: 2px dashed lightblue;
     outline-offset: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    color: #7f6599;
 }
 
 i {
