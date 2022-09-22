@@ -4,7 +4,7 @@
 
 .hero__title {
     padding: 1rem;
-    color: #7f6599;
+    color: var(--clr-accent);
     margin-top: 2rem;
     font-size: 4rem;
     font-weight: 400;
@@ -20,7 +20,7 @@
 
 .hero__img {
     border-radius: 50%;
-    background: linear-gradient(45deg, #7f6599, transparent);
+    background: linear-gradient(45deg, var(--clr-accent), var(--clr-tranparent));
 }
 
 .hero__img-wrapper {

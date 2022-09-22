@@ -14,8 +14,8 @@
 }
 
 body {
-    background: #212121;
-    color: #d2d2d2;
+    background: var(--clr-dark);
+    color: var(--clr-grey-1);
     font-family: 'Roboto', 'sans-serif';
 }
 
@@ -46,7 +46,7 @@ h2 {
 p {
     line-height: 1.5;
     font-size: 1rem;
-    color: var(--clr-grey);
+    color: inherit;
     padding: .5rem .5rem;
 }
 
@@ -58,7 +58,7 @@ a, .skip-link {
 
 /* focus styles */
 a:focus, .skip-link:focus {
-    outline: 2px dashed lightblue;
+    outline: 2px dashed var(--clr-accent-light);
     outline-offset: 5px;
 }
 
@@ -66,7 +66,7 @@ a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
-    color: #7f6599;
+    color: var(--clr-accent);
 }
 
 i {

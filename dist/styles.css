@@ -21,8 +21,15 @@ img {
 :root {
   --clr-light: #f5f5f5;
   --clr-dark: #212121;
-  --clr-grey: #b5b5b5;
-  --clr-accent-600: #f4511e;
+  --clr-grey-1: #d2d2d2;
+  --clr-grey-2: #b5b5b5;
+  --clr-grey-3: #505050;
+  --clr-grey-4: #363636;
+  --clr-focus: #ffab91;
+  --clr-accent: #7f6599;
+  --clr-accent-light: lightblue;
+  --clr-accent-dark: rebeccapurple;
+  --clr-transparent: transparent;
 }
 
 @media (min-width: 640px) {
@@ -42,8 +49,8 @@ img {
 }
 
 body {
-  background: #212121;
-  color: #d2d2d2;
+  background: var(--clr-dark);
+  color: var(--clr-grey-1);
   font-family: "Roboto", "sans-serif";
 }
 
@@ -73,7 +80,7 @@ h2 {
 p {
   line-height: 1.5;
   font-size: 1rem;
-  color: var(--clr-grey);
+  color: inherit;
   padding: 0.5rem 0.5rem;
 }
 
@@ -85,7 +92,7 @@ a, .skip-link {
 
 /* focus styles */
 a:focus, .skip-link:focus {
-  outline: 2px dashed lightblue;
+  outline: 2px dashed var(--clr-accent-light);
   outline-offset: 5px;
 }
 
@@ -93,7 +100,7 @@ a:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
-  color: #7f6599;
+  color: var(--clr-accent);
 }
 
 i {
@@ -101,8 +108,8 @@ i {
 }
 
 body.light {
-  background: #f5f5f5;
-  color: #505050;
+  background: var(--clr-light);
+  color: var(--clr-grey-3);
 }
 
 .button.light {
@@ -110,16 +117,16 @@ body.light {
   color: initial;
 }
 .button.light:hover {
-  background: #212121;
-  color: #f5f5f5;
+  background: var(--clr-dark);
+  color: var(--clr-light);
 }
 
 p.light {
-  color: #363636;
+  color: var(--clr-grey-4);
 }
 
 .gradient {
-  background: -webkit-linear-gradient(65deg, rebeccapurple, #7f6599, lightblue, #7f6599, rebeccapurple);
+  background: -webkit-linear-gradient(65deg, var(--clr-accent-dark), var(--clr-accent), var(--clr-accent-light), var(--clr-accent), var(--clr-accent-dark));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -143,12 +150,12 @@ p.light {
 
 .site__title::before {
   transform: translateX(-89px);
-  background: linear-gradient(-90deg, #7f6599, transparent);
+  background: linear-gradient(-90deg, var(--clr-accent), var(--clr-transparent));
 }
 
 .site__title::after {
   transform: translateX(10px);
-  background: linear-gradient(90deg, #7f6599, transparent);
+  background: linear-gradient(90deg, var(--clr-accent), var(--clr-transparent));
 }
 
 .sr-only {
@@ -271,7 +278,7 @@ p.light {
 
 .hero__title {
   padding: 1rem;
-  color: #7f6599;
+  color: var(--clr-accent);
   margin-top: 2rem;
   font-size: 4rem;
   font-weight: 400;
@@ -287,7 +294,7 @@ p.light {
 
 .hero__img {
   border-radius: 50%;
-  background: linear-gradient(45deg, #7f6599, transparent);
+  background: linear-gradient(45deg, var(--clr-accent), var(--clr-tranparent));
 }
 
 .hero__img-wrapper {
@@ -320,7 +327,7 @@ p.light {
 
 .project__text {
   padding: 1rem 0;
-  color: #cacaca;
+  color: var(--clr-grey-1);
 }
 
 .social-links-wrapper {

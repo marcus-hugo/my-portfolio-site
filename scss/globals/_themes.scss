@@ -1,6 +1,6 @@
 body.light {
-    background: #f5f5f5;
-    color: #505050;
+    background: var(--clr-light);
+    color: var(--clr-grey-3);
 }
 
 .button.light {
@@ -8,15 +8,17 @@ body.light {
     color: initial;
 
     &:hover {
-        background: #212121;
-        color: #f5f5f5;
+        background: var(--clr-dark);
+        color: var(--clr-light);
     }
 }
 
-p.light { color: #363636; }
+p.light { 
+    color: var(--clr-grey-4);
+}
 
 .gradient {
-    background: -webkit-linear-gradient(65deg,rebeccapurple, #7f6599, lightblue, #7f6599, rebeccapurple);
+    background: -webkit-linear-gradient(65deg, var(--clr-accent-dark), var(--clr-accent), var(--clr-accent-light), var(--clr-accent), var(--clr-accent-dark));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -40,10 +42,10 @@ p.light { color: #363636; }
 
 .site__title::before { 
     transform: translateX(-89px);
-    background: linear-gradient(-90deg, #7f6599, transparent);
+    background: linear-gradient(-90deg, var(--clr-accent), var(--clr-transparent));
 }
 
 .site__title::after { 
     transform: translateX(10px);
-    background: linear-gradient(90deg, #7f6599, transparent);
+    background: linear-gradient(90deg, var(--clr-accent), var(--clr-transparent));
 }
