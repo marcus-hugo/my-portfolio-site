@@ -3,7 +3,7 @@
     border-radius: 3px;
     background: var(--clr-dark);
     color: var(--clr-light);
-    border: 1px solid;
+    box-shadow: 0px 0px 5px -1px;
     cursor: pointer;
 
     &:hover {

@@ -37,7 +37,7 @@ img {
 }
 @media (min-width: 1400px) {
   :root {
-    font-size: 1.4;
+    font-size: 1.4rem;
   }
 }
 
@@ -48,13 +48,12 @@ body {
 }
 
 section {
-  margin: 5rem 0 0 0;
-  padding: 0 0 8rem 0;
+  padding: 8rem 0 16rem 0;
   text-align: center;
-  border-bottom: 1px dashed;
+  box-shadow: 0px 0px 2px -1px;
 }
 section:last-of-type {
-  border-bottom: 1px solid;
+  box-shadow: none;
 }
 
 h1 {
@@ -226,7 +225,7 @@ p.light {
   border-radius: 3px;
   background: var(--clr-dark);
   color: var(--clr-light);
-  border: 1px solid;
+  box-shadow: 0px 0px 5px -1px;
   cursor: pointer;
 }
 .button:hover {
@@ -235,11 +234,11 @@ p.light {
 }
 
 .header {
-  border-bottom: 1px solid;
+  box-shadow: 0px 0px 5px -2px;
 }
 
 .header__logo {
-  border: 1px solid;
+  box-shadow: 0px 0px 5px -1px;
   border-radius: 5px;
   padding: 0.2rem;
 }
@@ -293,7 +292,7 @@ p.light {
 
 .project {
   max-width: 400px;
-  border: 1px solid;
+  box-shadow: 1px 2px 6px -2px;
   padding: 1rem 0.7rem;
   margin: 0 0.7rem;
   border-radius: 7px;
@@ -330,6 +329,7 @@ a:hover {
 
 footer {
   padding: 2rem 0;
+  box-shadow: 0px 0px 3px -1px;
 }
 
 @media (min-width: 980px) {
