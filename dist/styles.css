@@ -16,6 +16,7 @@ body, html {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 :root {
@@ -304,6 +305,10 @@ p.light {
   height: 250px;
 }
 
+.projects-wrapper {
+  gap: 2rem;
+}
+
 .project {
   max-width: 400px;
   box-shadow: 1px 2px 6px -2px;
@@ -323,11 +328,12 @@ p.light {
 .project__title {
   font-size: 1.7rem;
   font-weight: 700;
+  color: var(--clr-accent);
 }
 
 .project__text {
   padding: 1rem 0;
-  color: var(--clr-grey-1);
+  color: var(--clr-grey-2);
 }
 
 .social-links-wrapper {
