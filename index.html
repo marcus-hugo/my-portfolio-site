@@ -43,7 +43,7 @@
         <section class="hero-section f jc-c" id="hero">
             <div class="wrapper f fd-c jc-c ai-c">
                 <div class="hero__img-wrapper">
-                    <img class="hero__img" src="images/selfie-no-bg.png" alt="Marcus"></img>
+                    <img width="320" height="320" class="hero__img" src="images/selfie-no-bg.png" alt="Marcus"></img>
                 </div>
                 <h1 class="hero__title">Hi, I'm Marcus!</h1>
                 <p class="hero__subtitle"><span class="gradient dev">Frontend Developer.</span></p>
@@ -54,9 +54,6 @@
 
         <section id="skills" class="skills-section f fd-c jc-c ai-c">
             <h2 class="site__title">My Skills</h2>
-            <p class="skills-section__text">
-               
-            </p>
             
             <ul class="skills-section-ul f w">
                 <li class="skills-section-ul__li">
@@ -77,6 +74,12 @@
                 <li class="skills-section-ul__li">
                     <p>Git</p>
                 </li>
+                <li class="skills-section-ul__li">
+                    <p>Eleventy</p>
+                </li>
+                <li class="skills-section-ul__li">
+                    <p>Wordpress</p>
+                </li>
             </ul>
         </section>
 
@@ -85,11 +88,27 @@
             <div class="wrapper">
                 <h2 class="site__title">My Projects</h2>
             </div>
-            <div class="f w jc-c g1">
+            <div class="f w jc-c projects-wrapper">
+
+                 <!-- Project -->
+                 <div class="project f fd-c ai-c">
+                    <div class="project__img-wrapper">
+                        <img width="1280" height="720" class="screenshot" src="images/my-portfolio-site.png" alt="marcus portfolio website">
+                    </div>
+                    <h4 class="project__title">My Portfolio Site</h4>
+                    <p class="project__text">
+                        This go around I upgraded to using Sass and BEM. I focused on keeping the UI simple, responsive, and accessible. I am definitley a fan of a dark theme UI, so I had to implement a dark/light toggle..
+                    </p>
+                    <div class="f g1">
+                        <!-- <a href=""  target="_blank" rel="noopener noreferrer">Live</a> -->
+                        <a href="https://github.com/marcus-hugo/my-portfolio-site" target="_blank" rel="noopener noreferrer">Github</a>
+                    </div>
+                </div>
+
                 <!-- Project -->
                 <div class="project f fd-c ai-c">
                     <div class="project__img-wrapper">
-                        <img class="screenshot" src="images/creative-agency-website.png" alt="creative single page site">
+                        <img width="1280" height="720" class="screenshot" src="images/creative-agency-website.png" alt="creative single page site">
                     </div>
                     <h4 class="project__title">Creative Agency Single Page Site</h4>
                     <p class="project__text">
@@ -106,7 +125,7 @@
                 <!-- Project -->
                 <div class="project f fd-c ai-c">
                     <div class="project__img-wrapper">
-                        <img class="screenshot" src="images/social-media-dashboard.png" alt="social media dashboard">
+                        <img width="1280" height="720" class="screenshot" src="images/social-media-dashboard.png" alt="social media dashboard">
                     </div>
                     <h4 class="project__title">Social Media Dashboard</h4>
                     <p class="project__text">
@@ -122,7 +141,7 @@
                  <!-- Project -->
                  <div class="project f fd-c ai-c">
                     <div class="project__img-wrapper">
-                        <img class="screenshot" src="images/invoice-creator.png" alt="social media dashboard">
+                        <img width="1280" height="720" class="screenshot" src="images/invoice-creator-app.png" alt="invoice creater app">
                     </div>
                     <h4 class="project__title">Invoice Creator</h4>
                     <p class="project__text">Invoice app to add and remove itmes, and send(reset) the form.</p>
