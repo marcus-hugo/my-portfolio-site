@@ -1,19 +1,9 @@
-body.light {
+body.light-theme {
     background: var(--clr-light);
     color: var(--clr-grey-3);
 }
 
-.button.light {
-    background: initial;
-    color: initial;
-
-    &:hover {
-        background: var(--clr-dark);
-        color: var(--clr-light);
-    }
-}
-
-p.light { 
+p.light-theme { 
     color: var(--clr-grey-4);
 }
 

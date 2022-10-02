@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" theme="dark light">
     <link rel="stylesheet" href="dist/styles.css">
      <!-- Google Fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +34,23 @@
                 </li>
             </ul>
         </nav>
-        <button class="button m-1rem button-toggle--theme-light">Light</button>
+        
+        <div class="toggle-switch-wrapper">
+            <span class="toggle-switch__label">Dark theme</span>
+            <label class="toggle-switch" for="theme-toggle">
+                <!-- <span class="toggle-switch__label">Dark theme</span> -->
+                <input 
+                    class="toggle-switch__input" 
+                    id="theme-toggle"
+                    title="Toggles light and dark"
+                    role="switch" 
+                    type="checkbox"
+                    aria-checked="false"
+                    aria-live="polite"
+                >
+                <span class="toggle-switch__slider"></span>
+            </label>
+        </div>
     </header>
 
     <!-- Main Content -->
@@ -112,8 +129,8 @@
                     </div>
                     <h4 class="project__title">Creative Agency Single Page Site</h4>
                     <p class="project__text">
-                        Three section site with a 
-                        drop-down menu, 3 images carousel, 
+                        Three sections, a 
+                        mobile menu, 3 images manual slideshow, and 
                         built with a webpack workflow.
                     </p>
                     <div class="f g1">
@@ -129,7 +146,7 @@
                     </div>
                     <h4 class="project__title">Social Media Dashboard</h4>
                     <p class="project__text">
-                        Dashboard with OS prefers-color-scheme 
+                        CSS prefers-color-scheme 
                         and checkbox for manual switching.
                     </p>
                     <div class="f g1">
@@ -159,7 +176,7 @@
         <section id="contact">
             <div class="wrapper">
                 <h2 class="site__title">Contact</h2>
-                <p>Let me know if you are interested in working together on a project!</p>
+                <p>Let me know if you are interested in working together on a project or want to connect!</p>
             </div>
             <!-- Social links -->
             <div class="social-links-wrapper f jc-c g1">

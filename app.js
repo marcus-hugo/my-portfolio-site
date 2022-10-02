@@ -1,59 +1,71 @@
+const body = document.querySelector('body');
+const checkbox = document.getElementById('theme-toggle');
+const toggle = document.querySelector('.toggle-switch__input');
+var mediaQueryList = window.matchMedia('(prefers-color-scheme: light)');
+let isToggleChecked = toggle.getAttribute('aria-checked');
+let darkMode = localStorage.getItem('darkMode');
 
-const body = document.querySelector('body')
-const toggleBtn = document.querySelector('.button-toggle--theme-light')
-const allBtns = document.querySelectorAll('.button')
-const allPs = document.querySelectorAll('p')
-let darkMode = localStorage.getItem('darkMode')
-
-if (darkMode === 'false') {
-    
-    toggleBtn.classList.contains('light') ? 
-    toggleBtn.innerText = 'Light' : 
-    toggleBtn.innerText = "Dark"
-
-    body.classList.add('light')
-    for (let b of allBtns) {
-        b.classList.add('light')
-    }
-
-    for (let p of allPs) {
-        p.classList.add('light')
-    }
-
-   
-} else {
-
-    body.classList.remove('light')
-    for (let b of allBtns) {
-        b.classList.remove('light')
-    }
-
-    for (let p of allPs) {
-        p.classList.remove('light')
-    }
-
-  
+function addLightTheme() {
+    body.classList.remove('dark-theme');
+    body.classList.add('light-theme');
 }
 
-toggleBtn.addEventListener('click', () => {
+function addDarkTheme() {
+    body.classList.remove('light-theme');
+    body.classList.add('dark-theme');
+}
+
+function systemChange() {
     
-    body.classList.toggle('light')
+    console.log('change event listener added');
 
-    toggleBtn.classList.contains('light') ? 
-    toggleBtn.innerText = 'Light' : 
-    toggleBtn.innerText = "Dark"
-
-    for (let b of allBtns) {
-        b.classList.toggle('light')
-    }
-
-    for (let p of allPs) {
-        p.classList.toggle('light')
-    }
-
-    if (body.classList.contains('light')) {
-        localStorage.setItem('darkMode', 'false')
+    if (mediaQueryList.matches === false) {
+        toggle.setAttribute('aria-checked', 'true');
+        checkbox.checked = true;
+        addDarkTheme();
     } else {
-        localStorage.setItem('darkMode', 'true')
+        toggle.setAttribute('aria-checked', 'false');
+        checkbox.checked = false;
+        addLightTheme();
+    }
+}
+
+mediaQueryList.addEventListener('change', systemChange);
+
+toggle.addEventListener('click', function() {
+    if (checkbox.checked === false) {
+        localStorage.setItem('darkMode', 'false');
+        toggle.setAttribute('aria-checked', 'false');
+        addLightTheme();
+        
+    } else if (checkbox.checked === true) {
+        localStorage.setItem('darkMode', 'true');
+        toggle.setAttribute('aria-checked', 'true');
+        addDarkTheme();
     }
 })
+
+window.onload = () => {
+  
+    if (mediaQueryList.matches === false) {
+        toggle.setAttribute('aria-checked', 'true');
+        checkbox.checked = true; 
+
+    } else {
+        toggle.setAttribute('aria-checked', 'false');
+        checkbox.checked = false;
+    }
+
+    if (darkMode === 'true') {
+        mediaQueryList.removeEventListener('change', systemChange);
+        toggle.setAttribute('aria-checked', 'true');
+        checkbox.checked = true;
+        addDarkTheme();
+
+    } else if (darkMode === 'false') {
+        mediaQueryList.removeEventListener('change', systemChange);
+        toggle.setAttribute('aria-checked', 'false');
+        checkbox.checked = false;
+        addLightTheme();
+    }
+}
