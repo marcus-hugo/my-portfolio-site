@@ -374,9 +374,6 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
 .project__img-wrapper {
   border-radius: 5px;
 }
-.project__img-wrapper img {
-  max-height: 200px;
-}
 
 .project__title {
   font-size: 1.7rem;
