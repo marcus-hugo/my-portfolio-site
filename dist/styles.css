@@ -243,6 +243,9 @@ p.light-theme {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin: 1rem;
 }
 
@@ -303,6 +306,15 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
 
 .header {
   box-shadow: 0px 0px 5px -2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 475px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
