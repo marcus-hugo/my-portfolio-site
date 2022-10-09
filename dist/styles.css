@@ -239,6 +239,22 @@ p.light-theme {
     ex. w/flex utility classes:
     <div class=" f jc-c g1"></div>
 */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .toggle-switch-wrapper {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -309,6 +325,9 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  -webkit-animation: fade-in 1000ms ease-in forwards;
+          animation: fade-in 1000ms ease-in forwards;
 }
 @media (min-width: 475px) {
   .header {
@@ -341,31 +360,43 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
   text-align: center;
 }
 
-.hero__title {
-  padding: 1rem;
-  color: var(--clr-accent);
-  margin-top: 2rem;
-  font-size: 4rem;
-  font-weight: 400;
-}
-
-.hero__subtitle {
-  font-size: 1.75rem;
-}
-
-.hero__text {
-  margin-top: 1rem;
-}
-
 .hero__img {
   border-radius: 50%;
   background: linear-gradient(45deg, var(--clr-accent), var(--clr-tranparent));
+  opacity: 0;
+  -webkit-animation: fade-in 300ms ease-in 1000ms forwards;
+          animation: fade-in 300ms ease-in 1000ms forwards;
 }
 
 .hero__img-wrapper {
   display: flex;
   justify-content: center;
   width: 250px;
+}
+
+.hero__title {
+  padding: 1rem;
+  color: var(--clr-accent);
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: 400;
+  opacity: 0;
+  -webkit-animation: fade-in 500ms ease-in 1500ms forwards;
+          animation: fade-in 500ms ease-in 1500ms forwards;
+}
+
+.hero__subtitle {
+  font-size: 1.75rem;
+  opacity: 0;
+  -webkit-animation: fade-in 300ms ease-in 2000ms forwards;
+          animation: fade-in 300ms ease-in 2000ms forwards;
+}
+
+.hero__text {
+  margin-top: 1rem;
+  opacity: 0;
+  -webkit-animation: fade-in 300ms ease-in 2300ms forwards;
+          animation: fade-in 300ms ease-in 2300ms forwards;
 }
 
 .projects-wrapper {

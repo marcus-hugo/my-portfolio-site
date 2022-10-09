@@ -42,3 +42,13 @@
     ex. w/flex utility classes:
     <div class=" f jc-c g1"></div>
 */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
