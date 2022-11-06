@@ -87,6 +87,14 @@ section:last-of-type {
   box-shadow: none;
 }
 
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+p {
+  max-width: 65ch;
+}
+
 h1 {
   font-size: 3rem;
   margin-top: 2rem;
@@ -409,59 +417,6 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
           animation: fade-in 300ms ease-in 2300ms forwards;
 }
 
-.projects-wrapper {
-  gap: 2rem;
-}
-
-.project {
-  max-width: 400px;
-  box-shadow: 1px 2px 6px -2px;
-  padding: 1rem 0.7rem;
-  margin: 0 0.7rem;
-  border-radius: 7px;
-  justify-content: space-between;
-}
-
-.project__img-wrapper {
-  border-radius: 5px;
-}
-
-.project__title {
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: var(--clr-accent);
-}
-
-.project__text {
-  padding: 1rem 0;
-}
-
-.social-links-wrapper {
-  margin: 2rem 0 0 0;
-}
-
-footer {
-  padding: 2rem 0;
-  box-shadow: 0px 0px 3px -1px;
-}
-
-@media (min-width: 980px) {
-  .about-text-wrapper p {
-    max-width: 70%;
-    align-self: center;
-  }
-}
-@media (min-width: 1400px) {
-  .about-text-wrapper p {
-    max-width: 50%;
-  }
-}
-@media (min-width: 2000px) {
-  .about-text-wrapper p {
-    max-width: 40%;
-  }
-}
-
 .skills-section__text {
   margin: 0 0 2rem 0;
   padding: 0.5rem 0.5rem;
@@ -490,4 +445,57 @@ footer {
 }
 .skills-section-ul__li {
   list-style: none;
+}
+
+.projects-wrapper {
+  gap: 2rem;
+}
+
+.project {
+  max-width: 400px;
+  box-shadow: 1px 2px 6px -2px;
+  padding: 1rem 0.7rem;
+  margin: 0 0.7rem;
+  border-radius: 7px;
+  justify-content: space-between;
+}
+
+.project__img-wrapper {
+  border-radius: 5px;
+}
+
+.project__title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--clr-accent);
+}
+
+.project__text {
+  padding: 1rem 0;
+}
+
+@media (min-width: 980px) {
+  .about-text-wrapper p {
+    max-width: 70%;
+    align-self: center;
+  }
+}
+@media (min-width: 1400px) {
+  .about-text-wrapper p {
+    max-width: 50%;
+  }
+}
+@media (min-width: 2000px) {
+  .about-text-wrapper p {
+    max-width: 40%;
+  }
+}
+
+.social-links-wrapper {
+  margin: 2rem 0 0 0;
+}
+
+footer {
+  padding: 2rem 0;
+  box-shadow: 0px 0px 3px -1px;
 }/*# sourceMappingURL=styles.css.map */
