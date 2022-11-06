@@ -474,6 +474,9 @@ input[type=checkbox]:focus-visible + .toggle-switch__slider {
   padding: 1rem 0;
 }
 
+.about-text-wrapper p {
+  text-align: left;
+}
 @media (min-width: 980px) {
   .about-text-wrapper p {
     max-width: 70%;
