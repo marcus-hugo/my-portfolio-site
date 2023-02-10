@@ -1,230 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" theme="dark light">
-    <meta name="description" content="Marcus Hugo frontend developer portfolio">
-    <link rel="stylesheet" href="dist/styles.css">
-     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" theme="dark light" />
+    <meta name="description" content="Marcus Hugo frontend developer portfolio" />
+    <link rel="stylesheet" href="dist/styles.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet" />
     <title>My Portfolio Site</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- skip link -->
     <a href="#main" class="skip-link sr-only">Skip to main content</a>
 
     <!-- Header / Navagation -->
     <header class="header">
-        <div class="header__logo m-1rem"><a href="index.html">MPH</a></div>
-        <nav class="nav">
-            <ul class="nav-ul">
-                <li class="nav-ul__li">
-                    <a href="#about">About</a>
-                </li>
-                <li class="nav-ul__li">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="nav-ul__li">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        
-        <div class="toggle-switch-wrapper">
-            <span class="toggle-switch__label">Dark theme</span>
-            <label class="toggle-switch" for="theme-toggle">
-                <input 
-                    class="toggle-switch__input" 
-                    id="theme-toggle"
-                    title="Toggles light and dark"
-                    role="switch" 
-                    type="checkbox"
-                    aria-checked="false"
-                    aria-live="polite"
-                >
-                <span class="toggle-switch__slider"></span>
-            </label>
-        </div>
+      <div class="header__logo m-1rem"><a href="index.html">MPH</a></div>
+      <nav class="nav">
+        <ul class="nav-ul">
+          <li class="nav-ul__li">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav-ul__li">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="nav-ul__li">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="toggle-switch-wrapper">
+        <span class="toggle-switch__label">Dark theme</span>
+        <label class="toggle-switch" for="theme-toggle">
+          <input class="toggle-switch__input" id="theme-toggle" title="Toggles light and dark" role="switch" type="checkbox" aria-checked="false" aria-live="polite" />
+          <span class="toggle-switch__slider"></span>
+        </label>
+      </div>
     </header>
 
     <!-- Main Content -->
     <main id="main">
+      <!-- Hero Section -->
+      <section class="hero-section f jc-c" id="hero">
+        <div class="wrapper f fd-c jc-c ai-c">
+          <div class="hero__img-wrapper">
+            <span class="hero_wavy-hand" style="font-size: 75px">&#128075;</span>
 
-        <!-- Hero Section -->
-        <section class="hero-section f jc-c" id="hero">
-            <div class="wrapper f fd-c jc-c ai-c">
-                <div class="hero__img-wrapper">
-                    <img width="320" height="320" class="hero__img" src="images/selfie-no-bg.png" alt="Marcus"></img>
-                </div>
-                <h1 class="hero__title">Hi, I'm Marcus!</h1>
-                <p class="hero__subtitle"><span class="gradient dev">Frontend Developer.</span></p>
-                <p class="hero__text">I enjoy working from a design and bringing it to life on the web!
-                </p>
+            <!-- <img width="320" height="320" class="hero__img" src="images/selfie-no-bg.png" alt="Marcus"></img> -->
+          </div>
+          <h1 class="hero__title">Hi, I'm Marcus!</h1>
+          <p class="hero__subtitle"><span class="gradient dev">Frontend Developer & Learner.</span></p>
+          <p class="hero__text">I'm a self-taught passionate frontend developer with over 2 years of experience creating visually appealing user-friendly websites using HTML, CSS, and JavaScript. I'm constantly learning and building to improve my skills to craft beautiful and functional websites.</p>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section f fd-c jc-c ai-c">
+        <h2 class="site__title">My Skills</h2>
+
+        <ul class="skills-section-ul f w">
+          <li class="skills-section-ul__li">
+            <p>HTML</p>
+          </li>
+          <li class="skills-section-ul__li">
+            <p>CSS</p>
+          </li>
+          <li class="skills-section-ul__li">
+            <p>JavaScript</p>
+          </li>
+          <li class="skills-section-ul__li">
+            <p>Sass</p>
+          </li>
+          <li class="skills-section-ul__li">
+            <p>React</p>
+          </li>
+          <li class="skills-section-ul__li">
+            <p>Git</p>
+          </li>
+          <li class="skills-section-ul__li">
+            <p>Eleventy</p>
+          </li>
+          <li class="skills-section-ul__li">
+            <p>Wordpress</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <div class="wrapper">
+          <h2 class="site__title">My Projects</h2>
+        </div>
+        <div class="f w jc-c projects-wrapper">
+          <!-- Project -->
+          <div class="project f fd-c ai-c">
+            <div class="project__img-wrapper">
+              <img width="1280" height="720" class="screenshot" src="images/my-portfolio-site.png" alt="marcus portfolio website" />
             </div>
-        </section>
-
-        <section id="skills" class="skills-section f fd-c jc-c ai-c">
-            <h2 class="site__title">My Skills</h2>
-            
-            <ul class="skills-section-ul f w">
-                <li class="skills-section-ul__li">
-                    <p>HTML</p>
-                </li>
-                <li class="skills-section-ul__li">
-                    <p>CSS</p>
-                </li>
-                <li class="skills-section-ul__li">
-                    <p>JavaScript</p>
-                </li>
-                <li class="skills-section-ul__li">
-                    <p>Sass</p>
-                </li>
-                <li class="skills-section-ul__li">
-                    <p>React</p>
-                </li>
-                <li class="skills-section-ul__li">
-                    <p>Git</p>
-                </li>
-                <li class="skills-section-ul__li">
-                    <p>Eleventy</p>
-                </li>
-                <li class="skills-section-ul__li">
-                    <p>Wordpress</p>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="wrapper">
-                <h2 class="site__title">My Projects</h2>
+            <h3 class="project__title">My Portfolio Site</h3>
+            <p class="project__text">This go around I upgraded to using Sass and BEM. I focused on keeping the UI simple, responsive, and accessible. I am definitley a fan of a dark theme UI, so I had to implement a dark/light toggle..</p>
+            <div class="f g1">
+              <a href="https://github.com/marcus-hugo/my-portfolio-site" target="_blank" rel="noopener noreferrer">Github</a>
             </div>
-            <div class="f w jc-c projects-wrapper">
+          </div>
 
-                 <!-- Project -->
-                 <div class="project f fd-c ai-c">
-                    <div class="project__img-wrapper">
-                        <img width="1280" height="720" class="screenshot" src="images/my-portfolio-site.png" alt="marcus portfolio website">
-                    </div>
-                    <h3 class="project__title">My Portfolio Site</h3>
-                    <p class="project__text">
-                        This go around I upgraded to using Sass and BEM. I focused on keeping the UI simple, responsive, and accessible. I am definitley a fan of a dark theme UI, so I had to implement a dark/light toggle..
-                    </p>
-                    <div class="f g1">
-                        <a href="https://github.com/marcus-hugo/my-portfolio-site" target="_blank" rel="noopener noreferrer">Github</a>
-                    </div>
-                </div>
-
-                <!-- Project -->
-                <div class="project f fd-c ai-c">
-                    <div class="project__img-wrapper">
-                        <img width="1280" height="720" class="screenshot" src="images/creative-agency-website.png" alt="creative single page site">
-                    </div>
-                    <h3 class="project__title">Creative Agency Single Page Site</h3>
-                    <p class="project__text">
-                        Three sections, a 
-                        mobile menu, 3 images manual slideshow, and 
-                        built with a webpack workflow.
-                    </p>
-                    <div class="f g1">
-                        <a href="https://marcus-hugo.github.io/creative-agency/"  target="_blank" rel="noopener noreferrer">Live</a>
-                        <a href="https://github.com/marcus-hugo/creative-single-page-site" target="_blank" rel="noopener noreferrer">Github</a>
-                    </div>
-                </div>
-
-                <!-- Project -->
-                <div class="project f fd-c ai-c">
-                    <div class="project__img-wrapper">
-                        <img width="1280" height="720" class="screenshot" src="images/social-media-dashboard.png" alt="social media dashboard">
-                    </div>
-                    <h3 class="project__title">Social Media Dashboard</h3>
-                    <p class="project__text">
-                        CSS prefers-color-scheme 
-                        and checkbox for manual switching.
-                    </p>
-                    <div class="f g1">
-                        <a href="https://marcus-hugo.github.io/social-media-dashboard-with-theme-switcher-master/" target="_blank" rel="noopener noreferrer">Live</a>
-                        <a href="https://github.com/marcus-hugo/social-media-dashboard-with-theme-switcher-master" target="_blank" rel="noopener noreferrer">Github</a>
-                    </div>
-                </div>
-
-                 <!-- Project -->
-                 <div class="project f fd-c ai-c">
-                    <div class="project__img-wrapper">
-                        <img width="1280" height="720" class="screenshot" src="images/invoice-creator-app.png" alt="invoice creater app">
-                    </div>
-                    <h3 class="project__title">Invoice Creator</h3>
-                    <p class="project__text">Invoice app to add and remove itmes, and send(reset) the form.</p>
-
-                    <div class="f g1">
-                        <a href="https://marcus-hugo.github.io/invoice-creater/" target="_blank" rel="noopener noreferrer">Live</a>
-                        <a href="https://github.com/marcus-hugo/invoice-creater" target="_blank" rel="noopener noreferrer">Github</a>
-                    </div>   
-                </div>
-              
+          <!-- Project -->
+          <div class="project f fd-c ai-c">
+            <div class="project__img-wrapper">
+              <img width="1280" height="720" class="screenshot" src="images/creative-agency-website.png" alt="creative single page site" />
             </div>
-        </section>
+            <h3 class="project__title">Creative Agency Single Page Site</h3>
+            <p class="project__text">Three sections, a mobile menu, 3 images manual slideshow, and built with a webpack workflow.</p>
+            <div class="f g1">
+              <a href="https://marcus-hugo.github.io/creative-agency/" target="_blank" rel="noopener noreferrer">Live</a>
+              <a href="https://github.com/marcus-hugo/creative-single-page-site" target="_blank" rel="noopener noreferrer">Github</a>
+            </div>
+          </div>
 
-        <!-- About Section -->
-        <section id="about">
-            <div class="wrapper">
-                <h2 class="site__title">About Me</h2>
+          <!-- Project -->
+          <div class="project f fd-c ai-c">
+            <div class="project__img-wrapper">
+              <img width="1280" height="720" class="screenshot" src="images/social-media-dashboard.png" alt="social media dashboard" />
             </div>
-            <div class="about-text-wrapper f fd-c g1 p01">
-                <p>My first introduction to Programming was in highschool. 
-                    I wanted to try something different other
-                    than art. I Didn't quite get the hang of it.  Though, later in my College years, I remember 
-                    discovering the browser inspector tool and wondered what all that code was!  I was
-                    still curious about learning to code.
-                </p>
-        
-                <p>Fast foward many years, I built my own PC, later studied for the A+ exam, 
-                    then learned to use the command
-                    line, which led me back to web development. 
-                    It was the connection of writing HTML and CSS, then
-                    seeing <em>visually </em> the output that had me hooked!
-                </p>
-        
-                <p>After learning the basics, many sources say to start building projects. 
-                    And it's true! I've been
-                    building projects from Frontend Mentor,
-                    Scrimba, and Udemy.
-                </p>
-        
-                <p>I'm currently learning how powerful templating languages 
-                    are with static site generators, 
-                    specifically 11ty with Netlify and Netlify CMS. On the server side 
-                    I'm also learning Wordpress development with PHP.
-                </p>
+            <h3 class="project__title">Social Media Dashboard</h3>
+            <p class="project__text">CSS prefers-color-scheme and checkbox for manual switching.</p>
+            <div class="f g1">
+              <a href="https://marcus-hugo.github.io/social-media-dashboard-with-theme-switcher-master/" target="_blank" rel="noopener noreferrer">Live</a>
+              <a href="https://github.com/marcus-hugo/social-media-dashboard-with-theme-switcher-master" target="_blank" rel="noopener noreferrer">Github</a>
             </div>
-        </section>
+          </div>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="wrapper">
-                <h3 class="site__title">Contact</h3>
-                <p>Let me know if you are interested in working together on a project or want to connect!</p>
+          <!-- Project -->
+          <div class="project f fd-c ai-c">
+            <div class="project__img-wrapper">
+              <img width="1280" height="720" class="screenshot" src="images/invoice-creator-app.png" alt="invoice creater app" />
             </div>
-            <!-- Social links -->
-            <div class="social-links-wrapper f jc-c g1">
-                <a class="social-icons__link" href="https://www.linkedin.com/in/marcus-hugo-27823b32" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a class="social-icons__link" href="https://github.com/marcus-hugo" target="_blank" rel="noopener noreferrer">Github</a>
-                <a class="social-icons__link" href="mailto:phantomboss300@yahoo.com">Email</a>
+            <h3 class="project__title">Invoice Creator</h3>
+            <p class="project__text">Invoice app to add and remove itmes, and send(reset) the form.</p>
+
+            <div class="f g1">
+              <a href="https://marcus-hugo.github.io/invoice-creater/" target="_blank" rel="noopener noreferrer">Live</a>
+              <a href="https://github.com/marcus-hugo/invoice-creater" target="_blank" rel="noopener noreferrer">Github</a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <div class="wrapper">
+          <h2 class="site__title">About Me</h2>
+        </div>
+
+        <div class="about-text-wrapper f fd-c g1 p01">
+          <p>My first introduction to Programming was in highschool. I wanted to try something different other than art. I Didn't quite get the hang of it. Though, later in my College years, I remember discovering the browser inspector tool and wondered what all that code was! I was still curious about learning to code.</p>
+
+          <p>Fast foward many years, I built my own PC, later studied for the A+ exam, then learned to use the command line, which led me back to web development. It was the connection of writing HTML and CSS, then seeing <em>visually </em> the output that had me hooked!</p>
+
+          <p>After learning the basics, many sources say to start building projects. And it's true! I've been building projects from Frontend Mentor, Scrimba, and Udemy.</p>
+
+          <p>I'm currently learning how powerful templating languages are with static site generators, specifically 11ty with Netlify and Netlify CMS. On the server side I'm also learning Wordpress development with PHP.</p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="wrapper">
+          <h3 class="site__title">Contact</h3>
+          <p>Let me know if you are interested in working together on a project or want to connect!</p>
+        </div>
+        <!-- Social links -->
+        <div class="social-links-wrapper f jc-c g1">
+          <a class="social-icons__link" href="https://www.linkedin.com/in/marcus-hugo-27823b32" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="social-icons__link" href="https://github.com/marcus-hugo" target="_blank" rel="noopener noreferrer">Github</a>
+          <a class="social-icons__link" href="mailto:phantomboss300@yahoo.com">Email</a>
+        </div>
+      </section>
     </main>
 
     <footer class="f jc-c ai-c g1">
-        <small>© 2022 Marcus Hugo</small>
-        <small>Made with &#x1F497; in Collierville, TN</small>
+      <small>© 2022 Marcus Hugo</small>
+      <small>Made with &#x1F497; in Collierville, TN</small>
     </footer>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,38 +1,42 @@
 .hero-section {
-    text-align: center;
+  text-align: center;
+}
+
+.hero_wavy-hand {
+  opacity: 0;
+  animation: fade-in 300ms ease-in 1000ms forwards;
 }
 
 .hero__img {
-    border-radius: 50%;
-    background: linear-gradient(45deg, var(--clr-accent), var(--clr-tranparent));
-    opacity: 0;
-    animation: fade-in 300ms ease-in 1000ms forwards;
+  //   border-radius: 50%;
+  //   opacity: 0;
+  width: 125px;
 }
 
 .hero__img-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 250px;
+  display: flex;
+  justify-content: center;
+  //   width: 175px;
 }
 
 .hero__title {
-    padding: 1rem;
-    color: var(--clr-accent);
-    margin-top: 2rem;
-    font-size: 4rem;
-    font-weight: 400;
-    opacity: 0;
-    animation: fade-in 500ms ease-in 1500ms forwards;
+  padding: 1rem;
+  color: var(--clr-accent);
+  margin-top: 2rem;
+  font-size: 4rem;
+  font-weight: 400;
+  opacity: 0;
+  animation: fade-in 500ms ease-in 1500ms forwards;
 }
 
 .hero__subtitle {
-    font-size: 1.75rem;
-    opacity: 0;
-    animation: fade-in 300ms ease-in 2000ms forwards;
+  font-size: 1.75rem;
+  opacity: 0;
+  animation: fade-in 300ms ease-in 2000ms forwards;
 }
 
 .hero__text {
-    margin-top: 1rem;
-    opacity: 0;
-    animation: fade-in 300ms ease-in 2300ms forwards;
+  margin-top: 1rem;
+  opacity: 0;
+  animation: fade-in 300ms ease-in 2300ms forwards;
 }
