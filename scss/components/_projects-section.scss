@@ -1,26 +1,27 @@
 .projects-wrapper {
-    gap: 2rem;
+  gap: 2rem;
 }
 
 .project {
-    max-width: 400px;
-    box-shadow: 1px 2px 6px -2px;
-    padding: 1rem .7rem;
-    margin: 0 .7rem;
-    border-radius: 7px;
-    justify-content: space-between;
+  background: var(--card-bg);
+  color: var(--card-clr);
+  max-width: 400px;
+  padding: 1rem 0.7rem 2rem 0.7rem;
+  margin: 0 0.7rem;
+  border-radius: 7px;
+  justify-content: space-between;
 }
 
 .project__img-wrapper {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .project__title {
-    font-size: 1.7rem;
-    font-weight: 700;
-    color: var(--clr-accent);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--clr-accent);
 }
 
 .project__text {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }

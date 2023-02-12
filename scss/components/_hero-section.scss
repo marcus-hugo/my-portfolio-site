@@ -3,6 +3,7 @@
 }
 
 .hero_wavy-hand {
+  font-size: 45px;
   opacity: 0;
   animation: fade-in 300ms ease-in 1000ms forwards;
 }
@@ -23,7 +24,7 @@
   padding: 1rem;
   color: var(--clr-accent);
   margin-top: 2rem;
-  font-size: 4rem;
+  font-size: 2.75rem;
   font-weight: 400;
   opacity: 0;
   animation: fade-in 500ms ease-in 1500ms forwards;
