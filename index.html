@@ -23,33 +23,35 @@
     <!-- Header / Navagation -->
     <header class="header jc-sb">
       <div class="header__logo"><a href="index.html">MH</a></div>
-      <nav class="nav">
-        <ul class="nav-ul">
-          <li class="nav-ul__li">
-            <a href="#projects">Projects</a>
-          </li>
-          <li class="nav-ul__li">
-            <a href="#about">About</a>
-          </li>
-          <li class="nav-ul__li">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="controls-wrapper f">
-        <div class="toggle-switch-wrapper">
-          <!-- <span class="toggle-switch__label">Dark Theme</span> -->
-          <i class="bi bi-sun"></i>
-          <label class="toggle-switch" for="theme-toggle">
-            <input class="toggle-switch__input" id="theme-toggle" title="Toggles light and dark" role="switch" type="checkbox" aria-checked="false" aria-live="polite" />
-            <span class="toggle-switch__slider"></span>
-          </label>
-          <i class="bi bi-moon-stars"></i>
-        </div>
+      <div class="f ai-c header__menu-wrapper">
+        <nav class="nav">
+          <ul class="nav-ul">
+            <li class="nav-ul__li">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="nav-ul__li">
+              <a href="#about">About</a>
+            </li>
+            <li class="nav-ul__li">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-        <button class="nav-toggle" aria-label="toggle navigation">
-          <span class="hamburger"></span>
-        </button>
+        <div class="controls-wrapper f">
+          <div class="toggle-switch-wrapper">
+            <i class="bi bi-sun"></i>
+            <label class="toggle-switch" for="theme-toggle">
+              <input class="toggle-switch__input" id="theme-toggle" title="Toggles light and dark" role="switch" type="checkbox" aria-checked="false" aria-live="polite" />
+              <span class="toggle-switch__slider"></span>
+            </label>
+            <i class="bi bi-moon-stars"></i>
+          </div>
+
+          <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -107,7 +109,16 @@
         </div>
         <div class="f w jc-c projects-wrapper">
           <!-- Project -->
-
+          <div class="project f fd-c ai-c">
+            <div class="project__img-wrapper">
+              <img width="1280" height="720" class="screenshot" src="images/screenshot-ptah-website.webp" alt="grandkreweofptah.com" />
+            </div>
+            <h3 class="project__title">grandkreweofptah.com</h3>
+            <p class="project__text">Freelance custom Wordpress webstie for a non-profit using the Astra Theme.</p>
+            <div class="f g1">
+              <a href="https://grandkreweofptah.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i>Live</a>
+            </div>
+          </div>
           <!-- Project -->
           <div class="project f fd-c ai-c">
             <div class="project__img-wrapper">
