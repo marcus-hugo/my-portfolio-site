@@ -7,6 +7,8 @@ var mediaQueryList = window.matchMedia("(prefers-color-scheme: light)")
 let isToggleChecked = toggle.getAttribute("aria-checked")
 let darkMode = localStorage.getItem("darkMode")
 
+mediaQueryList.addEventListener("change", systemChange)
+
 function addLightTheme() {
   body.classList.remove("dark-theme")
   body.classList.add("light-theme")
@@ -40,14 +42,12 @@ function systemChange() {
     toggle.setAttribute("aria-checked", "true")
     checkbox.checked = true
     addDarkTheme()
-  } else {
+  } else if (mediaQueryList.matches === true) {
     toggle.setAttribute("aria-checked", "false")
     checkbox.checked = false
     addLightTheme()
   }
 }
-
-mediaQueryList.addEventListener("change", systemChange)
 
 toggle.addEventListener("click", function () {
   if (checkbox.checked === false) {

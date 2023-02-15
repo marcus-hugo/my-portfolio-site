@@ -3,6 +3,11 @@ body.light-theme {
   color: var(--clr-grey-3);
 }
 
+body.dark-theme {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+}
+
 p.light-theme {
   color: var(--clr-grey-4);
 }
