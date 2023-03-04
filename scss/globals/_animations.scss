@@ -1,0 +1,21 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateX(10px) rotate(7deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
