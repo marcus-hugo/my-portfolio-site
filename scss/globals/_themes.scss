@@ -1,3 +1,13 @@
+html:has(input[type="checkbox"]:checked) *::selection {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+}
+
+html:has(input[type="checkbox"]) *::selection {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+}
+
 body.light-theme {
   background: var(--clr-light);
   color: var(--clr-grey-3);
@@ -10,6 +20,11 @@ body.dark-theme {
 
 p.light-theme {
   color: var(--clr-grey-4);
+}
+
+*::selection.light-theme {
+  background: var(--text);
+  color: var(--background);
 }
 
 .nav.light-theme {

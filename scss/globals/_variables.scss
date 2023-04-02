@@ -23,6 +23,8 @@
     --card-bg: var(--clr-light);
     --menu-bg: var(--clr-light);
     --menu-clr: var(--clr-dark);
+    --selection-clr: var(--clr-light);
+    --selection-bg: var(--clr-dark);
   }
 }
 
@@ -34,5 +36,7 @@
     --card-bg: var(--clr-grey-8);
     --menu-bg: var(--clr-dark);
     --menu-clr: var(--clr-light);
+    --selection-clr: var(--clr-dark);
+    --selection-bg: var(--clr-light);
   }
 }
