@@ -1,6 +1,6 @@
 # My new Portfolio site!
 
-This go around I upgraded to using Sass and BEM.
+This go around I upgraded to Sass and BEM.
 I focused on keeping the UI simple, responsive, and accessible. I am definitley a fan of a dark theme UI, so I had to implement a dark/light toggle.
 
 ## Features
