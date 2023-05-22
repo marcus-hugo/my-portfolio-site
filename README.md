@@ -1,7 +1,9 @@
 # My new Portfolio site!
 
-This go around I upgraded to using Sass and BEM.
-I focused on keeping the UI simple, responsive, and accessible. I am definitley a fan of a dark theme UI, so I had to implement a dark/light toggle.
+## Goals
+
+I wanted to showcase my knowledge of HTML, CSS, and JavaScript, in a way that that others could read, learn, and utilize in their projects or portfolio. In keeping the code organized I followed the BEM methodolgy with Sass.
+My aim was to keep the UI simple, responsive, and accessible. I am definitley a fan of a dark theme UI, so I had to implement a dark/light toggle.
 
 ## Features
 
