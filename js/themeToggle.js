@@ -1,3 +1,4 @@
+const html = document.querySelector("html")
 const body = document.querySelector("body")
 const nav = document.querySelector(".nav")
 const projects = document.querySelectorAll(".project")
@@ -10,6 +11,8 @@ let darkMode = localStorage.getItem("darkMode")
 mediaQueryList.addEventListener("change", systemChange)
 
 function addLightTheme() {
+  html.style.colorScheme = "light"
+
   body.classList.remove("dark-theme")
   body.classList.add("light-theme")
 
@@ -23,6 +26,8 @@ function addLightTheme() {
 }
 
 function addDarkTheme() {
+  html.style.colorScheme = "dark"
+
   body.classList.remove("light-theme")
   body.classList.add("dark-theme")
 

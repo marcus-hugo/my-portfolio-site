@@ -17,6 +17,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    color-scheme: light;
     --background: var(--clr-light);
     --text: var(--clr-grey-3);
     --card-clr: var(--clr-dark);
@@ -30,6 +31,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    color-scheme: dark;
     --background: var(--clr-dark);
     --text: var(--clr-light);
     --card-clr: var(--clr-grey-0);
