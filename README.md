@@ -10,13 +10,13 @@ My aim was to keep the UI simple, responsive, and accessible. I am definitley a 
 - Semantic HTML
 - Responsive single page website with mobile navigation.
 - Sass for nesting and organizing CSS.
-- Accessibility:
-  - WCAG 2.1 AA compliant for color contrast.
-  - CSS `prefers-color-scheme: dark light` as a fallback for users system default.
-  - CSS `prefers-reduced-motion: reduce` to honor the users system setting.
 - Dark/light toggle with local storage.
 - Google Fonts
 - Bootstrap Icons
+- Accessibility:
+  - WCAG 2.1 AA compliant color contrast.
+  - CSS `prefers-reduced-motion: reduce` to honor the users system setting.
+  - Updated skip-link pattern to follow WebAim's. [https://webaim.org/techniques/css/invisiblecontent/]
 
 ## For Local Development
 

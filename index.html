@@ -21,7 +21,9 @@
 
   <body>
     <!-- skip link -->
-    <a href="#main" class="skip-link sr-only">Skip to main content</a>
+    <div id="skip">
+      <a href="#main-content">Skip to main content</a>
+    </div>
 
     <!-- Header / Navagation -->
     <header class="header jc-sb">
@@ -61,7 +63,7 @@
     </header>
 
     <!-- Main Content -->
-    <main id="main">
+    <main id="main-content">
       <!-- Hero Section -->
       <section class="hero-section f jc-c" id="hero">
         <div class="wrapper f fd-c jc-c ai-c">
@@ -69,7 +71,7 @@
             <span class="hero_wavy-hand">&#128075;</span>
           </div>
           <h1 class="hero__title">Hi, I'm Marcus Hugo!</h1>
-          <p class="hero__subtitle"><span class="gradient dev">Frontend Developer.</span></p>
+          <h2 class="hero__subtitle"><span class="gradient dev">Frontend Developer.</span></h2>
           <p class="hero__text">I'm a passionate self-taught frontend developer with over 2 years of experience crafting visually appealing user-friendly web experiences.</p>
         </div>
       </section>
@@ -110,6 +112,39 @@
         <div class="wrapper">
           <h2 class="site__title">My Projects</h2>
         </div>
+
+        <div class="f w jc-c projects-wrapper">
+          <!-- Project -->
+          <div class="project f fd-c ai-c">
+            <div class="project__img-wrapper">
+              <img width="1280" height="720" class="screenshot" src="images/markdown-notes-app.webp" alt="markdown notes app" />
+            </div>
+            <h3 class="project__title">Markdown Notes App</h3>
+            <p class="project__text">Create markdown notes with real time conversion to html. You can create, edit, and delete notes. Notes are saved in local storage for easy access. Toggle dark mode on and off for viewing preference. Built with Accessibility in mind.</p>
+            <div class="f g1">
+              <a aria-describedby="Visit Marcus Hugo's Creative Agency live website" href="https://dashing-salmiakki-a81d49.netlify.app/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i>Live</a>
+              <a aria-describedby="Visit Marcus Hugo's Creative Agency GitHub repository." href="" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>Github</a>
+            </div>
+          </div>
+
+          <!-- Project -->
+          <div class="project f fd-c ai-c">
+            <div class="project__img-wrapper">
+              <img width="1280" height="720" class="screenshot" src="images/creative-agency-website.png" alt="creative agency" />
+            </div>
+            <h3 class="project__title">Creative Agency Website</h3>
+            <p class="project__text">Mobile first responsive single page website with a hamburger menu and slideshow.</p>
+            <div class="f g1">
+              <a aria-labelledby="Visit Marcus Hugo's Creative Agency GitHub repository." href="https://marcus-hugo.github.io/creative-agency/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i>Live</a>
+              <a aria-labelledby="Visit Marcus Hugo's Creative Agency live website." href="https://github.com/marcus-hugo/creative-single-page-site" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>Github</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <h2 class="site__title">Freelance</h2>
+        </div>
+
         <div class="f w jc-c projects-wrapper">
           <!-- Project -->
           <div class="project f fd-c ai-c">
@@ -117,49 +152,9 @@
               <img width="1280" height="720" class="screenshot" src="images/screenshot-ptah-website.webp" alt="grandkreweofptah.com" />
             </div>
             <h3 class="project__title">grandkreweofptah.com</h3>
-            <p class="project__text">Freelance custom Wordpress webstie for a non-profit using the Astra Theme.</p>
+            <p class="project__text">Custom Wordpress website for a non-profit using the Astra Theme. Collaborated with organization members to deliver thoughtful copy, visually appealing assets, and custom CSS. Connected domain and set up hosting as a managed service.</p>
             <div class="f g1">
-              <a aria-label="Visit The Grand Krewe of PTAH's website" href="https://grandkreweofptah.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i>Live</a>
-            </div>
-          </div>
-
-          <!-- Project -->
-          <div class="project f fd-c ai-c">
-            <div class="project__img-wrapper">
-              <img width="1280" height="720" class="screenshot" src="images/creative-agency-website.png" alt="creative single page site" />
-            </div>
-            <h3 class="project__title">Creative Agency Single Page Site</h3>
-            <p class="project__text">Three sections, a mobile menu, 3 images manual slideshow, and built with a webpack workflow.</p>
-            <div class="f g1">
-              <a aria-label="Visit Marcus Hugo's Creative Agency GitHub repository." href="https://marcus-hugo.github.io/creative-agency/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i>Live</a>
-              <a aria-label="Visit Marcus Hugo's Creative Agency live website." href="https://github.com/marcus-hugo/creative-single-page-site" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>Github</a>
-            </div>
-          </div>
-
-          <!-- Project -->
-          <div class="project f fd-c ai-c">
-            <div class="project__img-wrapper">
-              <img width="1280" height="720" class="screenshot" src="images/social-media-dashboard.png" alt="social media dashboard" />
-            </div>
-            <h3 class="project__title">Social Media Dashboard</h3>
-            <p class="project__text">CSS prefers-color-scheme and checkbox for manual switching.</p>
-            <div class="f g1">
-              <a href="https://marcus-hugo.github.io/social-media-dashboard-with-theme-switcher-master/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i>Live</a>
-              <a href="https://github.com/marcus-hugo/social-media-dashboard-with-theme-switcher-master" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>Github</a>
-            </div>
-          </div>
-
-          <!-- Project -->
-          <div class="project f fd-c ai-c">
-            <div class="project__img-wrapper">
-              <img width="1280" height="720" class="screenshot" src="images/invoice-creator-app.png" alt="invoice creater app" />
-            </div>
-            <h3 class="project__title">Invoice Creator</h3>
-            <p class="project__text">Invoice app to add and remove items, and send(reset) the form.</p>
-
-            <div class="f g1">
-              <a href="https://marcus-hugo.github.io/invoice-creater/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i>Live</a>
-              <a href="https://github.com/marcus-hugo/invoice-creater" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>Github</a>
+              <a aria-labelledby="Visit The Grand Krewe of PTAH's website" href="https://grandkreweofptah.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i>Live</a>
             </div>
           </div>
         </div>
@@ -191,21 +186,23 @@
           <h3 class="site__title">Contact</h3>
           <p>Let me know if you are interested in working together on a project or want to connect!</p>
         </div>
-        <!-- Social links -->
-        <ul class="social-links-wrapper f jc-c g1">
-          <li>
-            <a href="https://twitter.com/MarcusPHugo" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i>Twitter</a>
-          </li>
-          <li>
-            <a class="social-icons__link" href="https://www.linkedin.com/in/marcus-hugo-27823b32" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i>LinkedIn</a>
-          </li>
-          <li>
-            <a class="social-icons__link" href="https://github.com/marcus-hugo" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>Github</a>
-          </li>
-          <li>
-            <a class="social-icons__link" href="mailto:phantomboss300@yahoo.com"><i class="bi bi-envelope-fill"></i>Email</a>
-          </li>
-        </ul>
+        <address>
+          <!-- Social links -->
+          <ul class="social-links-wrapper f jc-c g1">
+            <li>
+              <a href="https://twitter.com/MarcusPHugo" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i>Twitter</a>
+            </li>
+            <li>
+              <a class="social-icons__link" href="https://www.linkedin.com/in/marcus-hugo-27823b32" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i>LinkedIn</a>
+            </li>
+            <li>
+              <a class="social-icons__link" href="https://github.com/marcus-hugo" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>Github</a>
+            </li>
+            <li>
+              <a class="social-icons__link" href="mailto:phantomboss300@yahoo.com"><i class="bi bi-envelope-fill"></i>Email</a>
+            </li>
+          </ul>
+        </address>
       </section>
     </main>
 
