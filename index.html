@@ -25,40 +25,35 @@
     </div>
 
     <!-- Header / Navagation -->
-    <header class="header jc-sb">
+    <header class="header">
       <div class="header__logo">
         <a href="index.html">MH</a>
       </div>
-      <div class="f ai-c header__menu-wrapper">
-        <nav class="nav">
-          <ul class="nav-ul">
-            <li class="nav-ul__li">
-              <a href="#projects">Projects</a>
-            </li>
-            <li class="nav-ul__li">
-              <a href="#about">About</a>
-            </li>
-            <li class="nav-ul__li">
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <!-- <div class="header__menu-wrapper"> -->
+      <nav role="navigation" class="nav">
+        <ul class="nav-ul">
+          <li class="nav-ul__li">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="nav-ul__li">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav-ul__li">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-        <div class="controls-wrapper f">
-          <div class="toggle-switch-wrapper">
-            <i class="bi bi-sun"></i>
-            <label class="toggle-switch" for="theme-toggle">
-              <input type="checkbox" class="toggle-switch__input" id="theme-toggle" title="Toggles light and dark" role="switch" aria-checked="false" aria-live="polite" />
-              <span class="toggle-switch__slider"></span>
-            </label>
-            <i class="bi bi-moon-stars"></i>
-          </div>
-
-          <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-          </button>
-        </div>
+      <div class="toggle-switch-wrapper">
+        <i aria-hidden="true" class="bi bi-sun"></i>
+        <label class="toggle-switch" for="theme-toggle">
+          <input type="checkbox" class="toggle-switch__input" id="theme-toggle" title="Toggles light and dark" role="switch" aria-checked="false" aria-live="polite" />
+          <span class="toggle-switch__slider"></span>
+        </label>
+        <i aria-hidden="true" class="bi bi-moon-stars"></i>
       </div>
+
+      <!-- </div> -->
     </header>
 
     <!-- Main Content -->
@@ -122,7 +117,7 @@
             <p class="project__text">Create markdown notes with real time conversion to html. You can create, edit, and delete notes. Notes are saved in local storage for easy access. Toggle dark mode on and off for viewing preference. Built with Accessibility in mind.</p>
             <div class="f g1">
               <a href="https://dashing-salmiakki-a81d49.netlify.app/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i>Live</a>
-              <a href="" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>Github</a>
+              <a href="https://github.com/marcus-hugo/markdown-notes-app" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>Github</a>
             </div>
           </article>
 

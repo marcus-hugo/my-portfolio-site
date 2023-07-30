@@ -1,122 +1,36 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
 
-  &__logo {
-    margin: 0 0 0 1rem;
-
-    a:hover {
-      text-decoration: none;
-    }
+  @media (min-width: 375px) {
+    justify-content: space-between;
   }
+}
 
-  &__menu-wrapper {
-    gap: 1rem;
-  }
+.header__logo {
+  padding: 0 1rem;
+}
+
+.header__menu-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav {
   background: var(--menu-bg);
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateX(100%);
 }
 
 .nav-ul {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 0;
-  height: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 0.5rem;
   gap: 1rem;
-}
-
-/* Button */
-.nav-toggle {
-  padding: 0.5em;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  position: relative;
-  right: 1rem;
-  z-index: 1000;
-  width: 30px;
-}
-
-/* Hamburger */
-.hamburger {
-  display: block;
-  position: relative;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  background: var(--clr-accent);
-  width: 2em;
-  height: 3px;
-  border-radius: 1em;
-}
-
-.hamburger::before,
-.hamburger::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
-.hamburger::before {
-  top: 6px;
-}
-.hamburger::after {
-  bottom: 6px;
-}
-
-/* Nav open */
-.nav-open .nav {
-  transform: translateX(0);
-}
-
-.nav-open .hamburger {
-  transform: rotate(0.625turn);
-}
-
-.nav-open .hamburger::before {
-  transform: rotate(90deg) translateX(-6px);
-}
-
-.nav-open .hamburger::after {
-  opacity: 0;
-}
-
-.controls-wrapper {
-  gap: 0.5rem;
-}
-
-@media (min-width: 768px) {
-  .header {
-    justify-content: space-between;
-  }
-
-  .nav {
-    transform: translateX(0);
-    height: fit-content;
-    background: transparent;
-    position: static;
-  }
-
-  .nav-ul {
-    flex-direction: row;
-    font-size: 1rem;
-  }
-
-  .nav-toggle {
-    display: none;
-  }
+  font-size: 1rem;
 }
