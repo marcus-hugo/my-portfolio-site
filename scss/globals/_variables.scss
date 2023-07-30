@@ -12,6 +12,8 @@
   --clr-accent: #7f6599;
   --clr-accent-light: #add8e6;
   --clr-accent-dark: rebeccapurple;
+  --clr-hover-light: #977ea9;
+  --clr-hover-dark: rebeccapurple;
   --clr-transparent: transparent;
 }
 
@@ -26,6 +28,7 @@
     --menu-clr: var(--clr-dark);
     --selection-clr: var(--clr-light);
     --selection-bg: var(--clr-dark);
+    --clr-hover: var(--clr-hover-dark);
   }
 }
 
@@ -40,5 +43,6 @@
     --menu-clr: var(--clr-light);
     --selection-clr: var(--clr-dark);
     --selection-bg: var(--clr-light);
+    --clr-hover: var(--clr-hover-light);
   }
 }

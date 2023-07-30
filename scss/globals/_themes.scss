@@ -18,6 +18,14 @@ body.dark-theme {
   color: var(--clr-light);
 }
 
+a:hover.light-theme {
+  color: var(--clr-hover-dark);
+}
+
+a:hover.dark-theme {
+  color: var(--clr-hover-light);
+}
+
 p.light-theme {
   color: var(--clr-grey-4);
 }

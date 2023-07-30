@@ -1,6 +1,7 @@
 const html = document.querySelector("html")
 const body = document.querySelector("body")
 const nav = document.querySelector(".nav")
+const aTags = document.querySelectorAll("a")
 const projects = document.querySelectorAll(".project")
 const checkbox = document.getElementById("theme-toggle")
 const toggle = document.querySelector(".toggle-switch__input")
@@ -19,9 +20,14 @@ function addLightTheme() {
   nav.classList.remove("dark-theme")
   nav.classList.add("light-theme")
 
-  for (let i = 0; i < projects.length; i++) {
-    projects[i].classList.remove("dark-theme")
-    projects[i].classList.add("light-theme")
+  for (let i = 0; i < aTags.length; i++) {
+    aTags[i].classList.remove("dark-theme")
+    aTags[i].classList.add("light-theme")
+  }
+
+  for (let i = 0; i < aTags.length; i++) {
+    aTags[i].classList.remove("dark-theme")
+    aTags[i].classList.add("light-theme")
   }
 }
 
