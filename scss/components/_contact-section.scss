@@ -3,5 +3,18 @@
 }
 
 .social-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
   margin: 2rem 0 0 0;
+
+  @media (min-width: 419px) {
+    flex-direction: row;
+  }
+}
+
+.address {
+  display: flex;
+  justify-content: center;
 }

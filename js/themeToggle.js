@@ -21,13 +21,13 @@ function addLightTheme() {
   nav.classList.add("light-theme")
 
   for (let i = 0; i < aTags.length; i++) {
-    aTags[i].classList.remove("dark-theme")
-    aTags[i].classList.add("light-theme")
+    projects[i].classList.remove("dark-theme")
+    projects[i].classList.add("light-theme")
   }
 
-  for (let i = 0; i < aTags.length; i++) {
-    aTags[i].classList.remove("dark-theme")
-    aTags[i].classList.add("light-theme")
+  for (let i = 0; i < projects.length; i++) {
+    projects[i].classList.remove("dark-theme")
+    projects[i].classList.add("light-theme")
   }
 }
 
@@ -39,6 +39,11 @@ function addDarkTheme() {
 
   nav.classList.remove("light-theme")
   nav.classList.add("dark-theme")
+
+  for (let i = 0; i < aTags.length; i++) {
+    projects[i].classList.remove("light-theme")
+    projects[i].classList.add("dark-theme")
+  }
 
   for (let i = 0; i < projects.length; i++) {
     projects[i].classList.remove("light-theme")
