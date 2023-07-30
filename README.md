@@ -2,7 +2,7 @@
 
 ## Goals
 
-I wanted to showcase my knowledge of HTML, CSS, and JavaScript, in a way that that others could read, learn, and utilize in their projects or portfolio. In keeping the code organized I followed the BEM methodolgy with Sass.
+To showcase my knowledge of HTML, CSS, and JavaScript, in a way that that others could read, learn, and utilize in their projects or portfolio. In keeping the code organized I followed the BEM methodolgy with Sass.
 My aim was to keep the UI simple, responsive, and accessible. I am definitley a fan of a dark theme UI, so I had to implement a dark/light toggle.
 
 ## Features
@@ -13,10 +13,14 @@ My aim was to keep the UI simple, responsive, and accessible. I am definitley a 
 - Dark/light toggle with local storage.
 - Google Fonts
 - Bootstrap Icons
-- Accessibility:
-  - WCAG 2.1 AA compliant color contrast.
-  - CSS `prefers-reduced-motion: reduce` to honor the users system setting.
-  - Updated skip-link pattern to follow WebAim's. [https://webaim.org/techniques/css/invisiblecontent/]
+
+## Accessibility
+
+- WCAG 2.1 AA compliant color contrast. [https://www.w3.org/TR/WCAG21/#contrast-minimum]
+- CSS `prefers-reduced-motion: reduce` to honor the users system setting.
+- Updated skip-link pattern to follow WebAim's. [https://webaim.org/techniques/css/invisiblecontent/]
+- aria-hidden for non-text purely decorative content [https://www.w3.org/TR/WCAG21/#non-text-content]
+- removed hamburger navigation for meaninful sequence. Focus was moving off screen. [https://www.w3.org/TR/WCAG21/#meaningful-sequence]
 
 ## For Local Development
 
