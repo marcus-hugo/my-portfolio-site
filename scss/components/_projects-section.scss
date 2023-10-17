@@ -7,7 +7,7 @@
   color: var(--card-clr);
   max-width: 400px;
   padding: 1rem 0.7rem 2rem 0.7rem;
-  margin: 0 0.7rem;
+  margin: 1rem 0.7rem;
   border-radius: 7px;
   justify-content: space-between;
 }
@@ -20,6 +20,13 @@
   font-size: 1.7rem;
   font-weight: 700;
   color: var(--clr-accent);
+}
+
+.project__ul {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
 }
 
 .project__text {
