@@ -2,8 +2,8 @@
 
 ## Goals
 
-To showcase my knowledge of HTML, CSS, and JavaScript, in a way that that others could read, learn, and utilize in their projects or portfolio. In keeping the code organized I followed the BEM methodolgy with Sass.
-My aim was to keep the UI simple, responsive, and accessible. I am definitley a fan of a dark theme UI, so I had to implement a dark/light toggle.
+To showcase my knowledge of HTML, CSS, and JavaScript, in a way that others could read, learn, and utilize in their projects or portfolio. In keeping the code organized I followed the BEM methodology with Sass.
+My aim was to keep the UI simple, responsive, and accessible. I am definite;y a fan of a dark theme UI, so I had to implement a dark/light toggle.
 
 ## Features
 
